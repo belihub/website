@@ -4,10 +4,53 @@
     <title>test page</title>
     <meta charset="utf-8">
     <style>
-    img {
-        width: 70%;
-        height: auto;
+    body {
+      background-color: #EBE8E4;
+      color: #222;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
     }
+
+    nav {
+      background-color: #fff;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+      color: #888;
+      display: block;
+      margin: 8px 22px 8px 22px;
+      overflow: hidden;
+      width: 90%;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+        nav ul li {
+            display: inline-block;
+            list-style-type: none;
+    
+            transition: all 0.2s;
+        }
+    
+            nav > ul > li > a {
+                color: #aaa;
+                display: block;
+                line-height: 56px;
+                padding: 0 24px;
+                text-decoration: none;
+            }
+
+            nav > ul > li:hover {
+              background-color: rgb( 40, 44, 47 );
+            }
+            
+            nav > ul > li:hover > a {
+              color: rgb( 255, 255, 255 );
+            }
     </style>
   </head>
   <body>
@@ -15,8 +58,15 @@
 <nav>
   <ul>
     <li><a href="ginger.html">Ginger</a></li>
+    <li><a>dummy</a></li>
+    <li><a>dummy</a></li>
+    <li><a>dummy</a></li>
   </ul>
 </nav>
     
   </body>
 </html>
+<!--Liberally copied from:
+    https://www.learnenough.com/html-tutorial
+    https://www.adam-bray.com/2017/02/17/easy-html-5-css-3-navigation-menu/
+  -->
